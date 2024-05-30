@@ -11,4 +11,9 @@ public class HelloWorldController {
     public ModelAndView index() {
         return new ModelAndView("home");
     }
+
+    @GetMapping("/links")
+    public  ModelAndView links() {
+        return new ModelAndView("links");
+    }
 }
