@@ -13,7 +13,12 @@ public class HelloWorldController {
     }
 
     @GetMapping("/links")
-    public  ModelAndView links() {
+    public ModelAndView links() {
         return new ModelAndView("links");
+    }
+
+    @GetMapping("/quotes")
+    public ModelAndView quotes() {
+        return new ModelAndView("quotes");
     }
 }
